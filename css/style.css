@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fde2e4; /* Rosa claro */
+    margin: 0;
+    padding: 0;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+#zona-evento {
+    width: 30%;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #fef3f5; /* Rosa claro */
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#formulario-agenda div {
+    margin-bottom: 10px;
+}
+#formulario-agenda label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#formulario-agenda input,
+#formulario-agenda select,
+#formulario-agenda textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+#formulario-agenda button {
+    background-color: #fccaca; /* Rosa pastel */
+    border: 1px solid #e93c57; /* Rojo claro */
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    color: #e93c57; /* Rojo claro */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+#formulario-agenda button:hover {
+    background-color: #e93c57; /* Rojo claro */
+    color: #fff;
+}
+#zona-calendario {
+    width: 65%;
+}
+#controles-navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#controles-navegacion h2 {
+    font-size: 1.5em;
+    color: #e93c57; /* Rojo claro */
+}
+#controles-navegacion button {
+    background-color: #fccaca; /* Rosa pastel */
+    border: 1px solid #e93c57; /* Rojo claro */
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #e93c57; /* Rojo claro */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+#controles-navegacion button:hover {
+    background-color: #e93c57; /* Rojo claro */
+    color: #fff;
+}
+#vista-calendario {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#vista-calendario button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background-color: #fccaca; /* Rosa pastel */
+    border: 1px solid #e93c57; /* Rojo claro */
+    border-radius: 5px;
+    color: #e93c57; /* Rojo claro */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+#vista-calendario button:hover {
+    background-color: #e93c57; /* Rojo claro */
+    color: #fff;
+}
+#tabla-calendario {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+#tabla-calendario div {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}

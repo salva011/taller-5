@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calendario</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/calen.js"></script>
+</head>
+
+<body>
+
+
+
+    <h1 style="text-align: center;"> Calendario</h1>
+    <main>
+
+
+        <section id="zona-evento">
+            <h2>Agregar - Editar Evento</h2>
+
+
+            <form id="formulario-agenda">
+
+                <div>
+                    <label for="input-fecha">Fecha:</label>
+
+                    <input type="date" id="input-fecha" name="fecha" required>
+                </div>
+                <div>
+                    <label for="input-hora">Hora:</label>
+
+                    <select id="input-hora" name="hora" required>
+
+                        <option value="10:00">10:00 AM</option>
+
+                        <option value="10:30">10:30 AM</option>
+
+
+
+                        <option value="11:00">11:00 AM</option>
+                        <option value="11:30">11:30 AM</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="input-descripcion">Descripción:</label>
+                    <textarea id="input-descripcion" name="descripcion" required></textarea>
+                </div>
+                <div>
+                    <label for="input-participantes">Participantes:</label>
+                    <input type="text" id="input-participantes" name="participantes" required>
+                </div>
+                <button type="submit">Guardar</button>
+            </form>
+        </section>
+        <section id="zona-calendario">
+
+
+            <div id="controles-navegacion">
+
+
+                <button id="btn-anterior">Anterior</button>
+                <h2 id="titulo-mes">Mes</h2>
+
+
+                <button id="btn-siguiente">Siguiente</button>
+            </div>
+            <div id="vista-calendario">
+                <button id="vista-semanal">Semanal</button>
+
+
+                <button id="vista-mensual">Mensual</button>
+                <button id="vista-anual">Anual</button>
+            </div>
+            <div id="tabla-calendario">
+                <!-- Aquí se generarán los días del calendario -->
+            </div>
+
+        </section>
+    </main>
+</body>
+</html>
